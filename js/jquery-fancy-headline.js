@@ -36,7 +36,7 @@ version: 1.0
         };
 
         for(i = 0; i < headline.length; i++){
-            headline[i] = headline[i].replace(/\s/g, '+');
+            headline[i] = headline[i].replace(/\s/g, '.');
 
             $.each(headline[i], function(){
                 $(settings.tag).append('<span style="display: none; float: left">' + headline[i] + '</span>').each(function(){
@@ -46,7 +46,7 @@ version: 1.0
                     $(this).find('span:nth-child(' + total + ')').each(function(){
                         var $this = $(this);
 
-                        if(headline[i] === '+'){
+                        if(headline[i] === '.'){
                             $this.css('visibility', 'hidden');
                         }
 
