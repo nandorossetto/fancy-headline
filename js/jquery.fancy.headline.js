@@ -13,7 +13,7 @@ version: 1.0
         var settings = $.extend({
             tag : '',
             fx : 'fade'
-        }),
+        }, settings),
 
         timer    = 1000,
         headline = $(settings.tag).html().split(''),
