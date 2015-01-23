@@ -11,9 +11,9 @@ version: 1.0
 (function($){
     $.fancyHeadline = function(settings){
         var settings = $.extend({
-                 tag : '',
-                  fx : 'fade'
-        }, settings),
+            tag : '',
+            fx : 'fade'
+        }),
 
         timer    = 1000,
         headline = $(settings.tag).html().split(''),
@@ -51,11 +51,12 @@ version: 1.0
                         }
 
                         setTimeout(function(){
-                            effects[settings.fx]($this)
+                            effects[settings.fx]($this);
                         }, timer += 60);
                     });
                 });
             });
         }
-    }
+    };
+    
 })(jQuery);
